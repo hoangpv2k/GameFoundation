@@ -10,7 +10,7 @@ public class PopupInGame : Popup
 
       Setup();
    }
-   
+
    private void Setup()
    {
       levelText.text = $"Level {Data.CurrentLevel}";
@@ -26,6 +26,9 @@ public class PopupInGame : Popup
    {
       SoundController.Instance.PlayFX(SoundName.ClickButton);
       GameManager.Instance.ReplayGame();
+
+      var item = ItemController.Instance.GetRandomItemData();
+      Data.CurrentPlayerSkin = item.Identity;
    }
 
    public void OnClickPrevious()
@@ -46,5 +49,21 @@ public class PopupInGame : Popup
    public void OnClickWin()
    {
       GameManager.Instance.OnWinGame(1f);
+   }
+   public void OnClickLevelA()
+   {
+      SoundController.Instance.PlayFX(SoundName.ClickButton);
+      GameManager.Instance.ReplayGame();
+
+      var item = ItemController.Instance.GetRandomItemData();
+      Data.CurrentPlayerSkin = item.Identity;
+   }
+   public void OnClickLevelB()
+   {
+      SoundController.Instance.PlayFX(SoundName.ClickButton);
+      GameManager.Instance.ReplayGame();
+
+      var item = ItemController.Instance.GetRandomItemData();
+      Data.CurrentPlayerSkin = item.Identity;
    }
 }

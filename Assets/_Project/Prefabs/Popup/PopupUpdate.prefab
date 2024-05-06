@@ -66,7 +66,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Popup Lose
+  m_text: Popup Update
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -257,7 +257,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 8541034256649808196}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: PopupLose, Assembly-CSharp
         m_MethodName: OnClickReplay
         m_Mode: 1
@@ -372,7 +372,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Replay
+  m_text: Update
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -583,9 +583,9 @@ GameObject:
   - component: {fileID: 1788165637488831168}
   - component: {fileID: 645323652005445488}
   - component: {fileID: -7875144206898530341}
-  - component: {fileID: 8541034256649808196}
+  - component: {fileID: 1817788392861294506}
   m_Layer: 5
-  m_Name: PopupLose
+  m_Name: PopupUpdate
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -663,7 +663,7 @@ CanvasGroup:
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
---- !u!114 &8541034256649808196
+--- !u!114 &1817788392861294506
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -672,6 +672,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 7370416450938019894}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 83b763ab43569044990e8c9f94ebf929, type: 3}
+  m_Script: {fileID: 11500000, guid: 8117bd35f90126049b3a0c5904bbd9ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  btnUpdate: {fileID: 5705614843647128392}
