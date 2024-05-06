@@ -431,6 +431,7 @@ MonoBehaviour:
   timeDisableButton: 0.2
   doubleClickInterval: 0.2
   longClickInterval: 0.5
+  delayDetectHold: 0.2
   onDoubleClick:
     m_PersistentCalls:
       m_Calls: []
@@ -440,7 +441,7 @@ MonoBehaviour:
   onPointerUp:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3837769158355645353}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Popup, Assembly-CSharp
         m_MethodName: Hide
         m_Mode: 1
@@ -452,6 +453,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  onHold:
+    m_PersistentCalls:
+      m_Calls: []
   isMotion: 1
   ignoreTimeScale: 0
   isMotionUnableInteract: 0
@@ -462,47 +466,15 @@ MonoBehaviour:
     motion: 2
     durationDown: 0.1
     durationUp: 0.1
-    interpolatorDown:
-      ease: 4
-      strength: 0.5
-      customCurve:
-        serializedVersion: 2
-        m_Curve: []
-        m_PreInfinity: 2
-        m_PostInfinity: 2
-        m_RotationOrder: 4
-    interpolatorUp:
-      ease: 5
-      strength: 0.5
-      customCurve:
-        serializedVersion: 2
-        m_Curve: []
-        m_PreInfinity: 2
-        m_PostInfinity: 2
-        m_RotationOrder: 4
+    interpolatorDown: 0
+    interpolatorUp: 0
   motionDataUnableInteract:
     scale: {x: 1.15, y: 1.15}
     motion: 3
     durationDown: 0.1
     durationUp: 0.1
-    interpolatorDown:
-      ease: 0
-      strength: 0
-      customCurve:
-        serializedVersion: 2
-        m_Curve: []
-        m_PreInfinity: 2
-        m_PostInfinity: 2
-        m_RotationOrder: 4
-    interpolatorUp:
-      ease: 0
-      strength: 0
-      customCurve:
-        serializedVersion: 2
-        m_Curve: []
-        m_PreInfinity: 2
-        m_PostInfinity: 2
-        m_RotationOrder: 4
+    interpolatorDown: 0
+    interpolatorUp: 0
   label: {fileID: 7319458420599386532}
 --- !u!1 &3868009648593509316
 GameObject:
@@ -604,7 +576,6 @@ GameObject:
   - component: {fileID: 770729044008306951}
   - component: {fileID: 1440998762905171865}
   - component: {fileID: 8729815142364667852}
-  - component: {fileID: 3837769158355645353}
   - component: {fileID: 3718543594051875324}
   m_Layer: 5
   m_Name: PopupNoInternet
@@ -673,25 +644,6 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 119
---- !u!114 &3837769158355645353
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4653886611305235950}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7d56f377c46db4448a3eab1d6ae83006, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Background: {fileID: 0}
-  Container: {fileID: 0}
-  UseShowAnimation: 0
-  ShowAnimationType: 0
-  UseHideAnimation: 0
-  HideAnimationType: 0
-  btnOk: {fileID: 2885364274083358938}
 --- !u!225 &3718543594051875324
 CanvasGroup:
   m_ObjectHideFlags: 0
