@@ -30,4 +30,11 @@ public class InternetController : SingletonDontDestroy<InternetController>
         yield return www;
         action(www.error == null);
     }
+    private IEnumerator checkInternetConnection2(Action<bool> action)
+    {
+        bool result;
+        result = Application.internetReachability != NetworkReachability.NotReachable;
+        action(result);
+        yield return null;
+    }
 }

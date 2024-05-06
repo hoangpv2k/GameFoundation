@@ -8,6 +8,10 @@ public class LevelController : SingletonDontDestroy<LevelController>
     
     public void PrepareLevel()
     {
+        if(Data.CurrentLevel>=2)
+        {
+            Data.CurrentLevel=Random.Range(1,3);
+        }
         GenerateLevel(Data.CurrentLevel);
     }
     
